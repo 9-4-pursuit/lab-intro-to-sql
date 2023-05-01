@@ -83,13 +83,13 @@ SELECT * FROM gifts WHERE gift ILIKE '%candle%';
 --
 \echo Query for every gift whose giver is Santa OR value is greater than 30
 --
-
+SELECT * FROM gifts WHERE giver = 'Santa' OR value > 30;
 
 --
 \echo Query for every gift whose giver is NOT Santa
 --
-
-
+SELECT * FROM gifts WHERE giver <> 'Santa' ;
+--not equal <>
 --
 \echo Update the second gift to have a value of 2999
 -- 
