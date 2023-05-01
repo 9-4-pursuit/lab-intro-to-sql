@@ -24,13 +24,14 @@ price INT,
 previously_regifted BOOLEAN DEFAULT false);
 -- 
 \echo See details of the table you created
+
 -- 
 \d gifts
 
 -- 
 \echo Alter the table so that the column price is changed to value 
 -- 
-ALTER TABLE gifts RENAME PRICE TO VALUE;
+ALTER TABLE gifts RENAME price TO value ;
 
 -- 
 \echo Insert a peach candle, given by 'Santa' thats value is 9 and has been previously regifted
